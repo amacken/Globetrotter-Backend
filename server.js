@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT||3001;
 const mongoose = require("mongoose");
+const path = require("path");
 const cors = require("cors");
+
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const db = mongoose.connection;
